@@ -1,0 +1,15 @@
+{
+  "python.analysis.typeCheckingMode": "basic",
+  "python.linting.enabled": true,
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": [
+    "--line-length",
+    "79",
+    "--skip-string-normalization"
+  ],
+  "editor.tabSize": 4,
+  "editor.formatOnSave": true,
+  "editor.rulers": [
+    79
+  ]
+}
