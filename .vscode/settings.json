@@ -14,5 +14,6 @@
   ],
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
-  }
+  },
+  "python.linting.flake8Enabled": true
 }
