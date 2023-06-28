@@ -14,7 +14,7 @@ python = "^3.11"
 [tool.poetry.group.dev.dependencies]
 flake8 = "^6.0.0"
 black = "^23.3.0"
-ipykernel = "^6.23.3"
+pytest = "^7.4.0"
 
 [build-system]
 requires = ["poetry-core"]
