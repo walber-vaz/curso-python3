@@ -22,3 +22,14 @@ if numero1 > 1 or numero2 > 1:
     print("Pelo menos um dos números é maior que 1.")
 else:
     print("Os dois números são menores que 1.")
+
+
+# Exemplo 3 not
+# not inverte o valor lógico
+numero1 = 1
+numero2 = 1
+
+if not numero1 > 1:
+    print("O número 1 é menor que 1.")
+else:
+    print("O número 1 é maior que 1.")
