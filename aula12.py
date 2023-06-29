@@ -63,5 +63,5 @@ conjunto = set(input('Digite um conjunto: (Ex: 1, 2, 3) ').split(','))
 print(f'O conjunto é {conjunto}')
 
 # Exemplo 10: input() com conversão para dicionário
-dicionario = dict(input('Digite um dicionário: (Ex: 1, 2, 3) ').split(','))
+dicionario = dict(input('Digite um dicionário: (Ex: 1, 2, 3) ').split(','))  # type: ignore
 print(f'O dicionário é {dicionario}')
