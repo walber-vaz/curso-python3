@@ -1,19 +1,21 @@
 {
-  "python.analysis.typeCheckingMode": "basic",
-  "python.linting.enabled": true,
-  "python.formatting.provider": "none",
-  "python.formatting.blackArgs": [
-    "--line-length",
-    "79",
-    "--skip-string-normalization"
-  ],
-  "editor.tabSize": 4,
-  "editor.formatOnSave": true,
-  "editor.rulers": [
-    79
-  ],
   "python.linting.flake8Enabled": true,
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter"
-  }
+  "python.linting.enabled": true
+  // "python.analysis.typeCheckingMode": "basic",
+  // "python.linting.enabled": true,
+  // "python.formatting.provider": "black",
+  // "python.formatting.blackArgs": [
+  //   "--line-length",
+  //   "79",
+  //   "--skip-string-normalization"
+  // ],
+  // "editor.tabSize": 4,
+  // "editor.formatOnSave": true,
+  // "editor.rulers": [
+  //   79
+  // ],
+  // "python.linting.flake8Enabled": true,
+  // "[python]": {
+  //   "editor.defaultFormatter": "ms-python.black-formatter"
+  // }
 }

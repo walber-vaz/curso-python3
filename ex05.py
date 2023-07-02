@@ -6,6 +6,15 @@ inteiro, informe que não é um número inteiro.
 
 
 def is_int():
+    """
+    Prompts the user to input an integer and determines if it is even or odd.
+
+    Parameters:
+        None
+
+    Returns:
+        None
+    """
     num = input("Digite um número inteiro: ")
 
     if num.isdigit():
@@ -26,6 +35,15 @@ Bom dia 0-11, Boa tarde 12-17 e Boa noite 18-23.
 
 
 def saudacao():
+    """
+    A function that greets the user based on the current time.
+
+    Parameters:
+    None
+
+    Returns:
+    None
+    """
     hora = input("Digite a hora atual: ")
 
     if hora.isdigit():
@@ -52,6 +70,16 @@ menos escreva "Seu nome é curto"; se tiver entre 5 e 6 letras, escreva
 
 
 def nome():
+    """
+    A function that prompts the user to enter their name,
+    and then prints a message based on the length of the name.
+
+    Parameters:
+        None
+
+    Returns:
+        None
+    """
     nome = input("Digite seu nome: ")
 
     if len(nome) <= 4:
