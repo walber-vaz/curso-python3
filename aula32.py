@@ -12,4 +12,5 @@ print("Usando format ->", f'{sum:.2f}')
 print("Usando round ->", round(sum, 2))
 
 # usando decimal
+# import decimal
 # print("Usando decimal ->", decimal.Decimal(sum))
