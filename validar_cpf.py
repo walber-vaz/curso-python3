@@ -23,12 +23,21 @@ contrário disso:
 
 O primeiro dígito do CPF é 7
 """
+import re
 
 # 746.824.890-70
+# cpf: str = (
+#     input('Digite o CPF: (somente números com pontos e traço) ')
+#     .replace('.', '')
+#     .replace('-', '')
+#     .replace(' ', '')
+#     .strip()
+# )
 cpf: str = input('Digite o CPF: (somente números com pontos e traço) ')
-cpf = cpf.replace('.', '').replace('-', '')
+cpf = re.sub(r'[^0-9]', '', cpf)
 
-if cpf == cpf[0] * len(cpf):
+
+if cpf == cpf[0] * len(cpf) or len(cpf) != 11:
     print('CPF está incorreto')
     exit()
 
