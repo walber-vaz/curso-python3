@@ -28,6 +28,10 @@ O primeiro dígito do CPF é 7
 cpf: str = input('Digite o CPF: (somente números com pontos e traço) ')
 cpf = cpf.replace('.', '').replace('-', '')
 
+if cpf == cpf[0] * len(cpf):
+    print('CPF está incorreto')
+    exit()
+
 
 def calcular_primeiro_digito(cpf: str) -> int:
     """
