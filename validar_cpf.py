@@ -23,23 +23,6 @@ contrário disso:
 
 O primeiro dígito do CPF é 7
 """
-import re
-
-# 746.824.890-70
-# cpf: str = (
-#     input('Digite o CPF: (somente números com pontos e traço) ')
-#     .replace('.', '')
-#     .replace('-', '')
-#     .replace(' ', '')
-#     .strip()
-# )
-cpf: str = input('Digite o CPF: (somente números com pontos e traço) ')
-cpf = re.sub(r'[^0-9]', '', cpf)
-
-
-if cpf == cpf[0] * len(cpf) or len(cpf) != 11:
-    print('CPF está incorreto')
-    exit()
 
 
 def calcular_primeiro_digito(cpf: str) -> int:
@@ -71,25 +54,3 @@ def calcular_segundo_digito(cpf: str) -> int:
     soma = sum(int(digito) * (11 - i) for i, digito in enumerate(cpf[:10]))
     resultado = (soma * 10) % 11
     return 0 if resultado > 9 else resultado
-
-
-def validar_cpf(cpf: str) -> bool:
-    """
-    Validates a CPF number.
-
-    Args:
-        cpf (str): The CPF number to be validated.
-
-    Returns:
-        bool: True if the CPF number is valid, False otherwise.
-    """
-    primeiro_digito = calcular_primeiro_digito(cpf)
-    segundo_digito = calcular_segundo_digito(cpf)
-    cpf_gerado = f'{cpf[:9]}{primeiro_digito}{segundo_digito}'
-    return cpf == cpf_gerado
-
-
-if validar_cpf(cpf):
-    print('CPF válido')
-else:
-    print('CPF inválido')
