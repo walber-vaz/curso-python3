@@ -10,14 +10,16 @@ dados: dict = {
     "profissao": "Programador",
     "empresa": "Nenhuma",
     "salario": 0.0,
-    "endereco": {
-        "rua": "Rua 1",
-        "numero": 1,
-        "bairro": "Centro",
-        "cidade": "São Miguel do Guamá",
-        "estado": "Pará",
-        "pais": "Brasil",
-    },
+    "endereco": [
+        {
+            "rua": "Rua 1",
+            "numero": 1,
+            "bairro": "Centro",
+            "cidade": "São Miguel do Guamá",
+            "estado": "Pará",
+            "pais": "Brasil",
+        }
+    ],
 }
 
 # Criando usando dict
