@@ -28,3 +28,10 @@ dados2: dict = dict(nome="Walber", idade=32, cidade="São Miguel do Guamá")
 # Imprimindo o dicionario
 print(dados)
 print(dados2)
+
+for chave in dados:
+    print(f"{chave}: {dados[chave]}")
+
+# Imprimindo o dicionario usando o metodo items()
+for chave, valor in dados.items():
+    print(f"{chave}: {valor}")
