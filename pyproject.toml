@@ -14,9 +14,43 @@ pydantic = "^1.10.9"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^6.0.0"
-black = "^23.3.0"
+black = {extras = ["d"], version = "^23.7.0"}
 pytest = "^7.4.0"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 79
+target-version = ['py39']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 79
+known_first_party = "curso_python3"
+known_third_party = "pydantic"
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+combine_as_imports = true
+
+[tool.flake8]
+max-line-length = 79
+extend-ignore = "E203, W503"
+exclude = ".git,__pycache__,docs/source/conf.py,old,build,dist"
