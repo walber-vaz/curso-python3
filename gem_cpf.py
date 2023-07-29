@@ -14,23 +14,23 @@ def gerar_cpf() -> str:
 
 
 def validar_cpf(cpf: str) -> bool:
-    cpf = re.sub(r'[^0-9]', '', cpf)
+    cpf = re.sub(r"[^0-9]", "", cpf)
 
     if cpf == cpf[0] * len(cpf) or len(cpf) != 11:
         return False
 
     primeiro_digito = calcular_primeiro_digito(cpf)
     segundo_digito = calcular_segundo_digito(cpf)
-    cpf_gerado = f'{cpf[:9]}{primeiro_digito}{segundo_digito}'
+    cpf_gerado = f"{cpf[:9]}{primeiro_digito}{segundo_digito}"
     return cpf == cpf_gerado
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     cpf = gerar_cpf()
-    cpf_format = f'{cpf[:3]}.{cpf[3:6]}.{cpf[6:9]}-{cpf[9:]}'
+    cpf_format = f"{cpf[:3]}.{cpf[3:6]}.{cpf[6:9]}-{cpf[9:]}"
     if validar_cpf(cpf):
-        print(f'O CPF {cpf_format} é válido')
+        print(f"O CPF {cpf_format} é válido")
     else:
-        print(f'O CPF {cpf_format} é inválido')
+        print(f"O CPF {cpf_format} é inválido")
 
-    print(f'O cpf gerado é {cpf_format}')
+    print(f"O cpf gerado é {cpf_format}")
