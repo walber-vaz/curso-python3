@@ -1,5 +1,6 @@
 # Dicionario em python
-# Estrutura de dados que armazena valores de um tipo de dado associados a uma chave
+# Estrutura de dados que armazena valores de um tipo de dado associados a uma
+# chave
 
 # Criando um dicionario
 dados: dict = {
@@ -29,9 +30,9 @@ dados2: dict = dict(nome="Walber", idade=32, cidade="São Miguel do Guamá")
 print(dados)
 print(dados2)
 
-for chave in dados:
-    print(f"{chave}: {dados[chave]}")
+for chave, valor in dados.items():
+    print(f"{chave}: {valor}")
 
-# Imprimindo o dicionario usando o metodo items()
+# Imprimindo o dicionario usando o método items()
 for chave, valor in dados.items():
     print(f"{chave}: {valor}")

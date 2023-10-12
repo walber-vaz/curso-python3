@@ -3,7 +3,8 @@
 # dicionario.keys() -> retorna as chaves do dicionário
 # dicionario.values() -> retorna os valores do dicionário
 # dicionario.items() -> retorna os itens do dicionário
-# dicionario.setdefault(chave, valor) -> retorna o valor da chave, se não existir, cria a chave com o valor
+# dicionario.setdefault(chave, valor) -> retorna o valor da chave, se não
+# existir, cria a chave com o valor
 # dicionario.update(dicionario2) -> atualiza o dicionário com o dicionário2
 # dicionario.pop(chave) -> remove o item da chave
 # dicionario.popitem() -> remove o último item do dicionário
